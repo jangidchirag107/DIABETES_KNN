@@ -11,7 +11,7 @@ With the growth of healthcare data and advancements in machine learning, predict
 The project demonstrates a complete end-to-end workflow, starting from data exploration and visualization to model training, evaluation, and interpretation.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-***📊 Dataset Description***
+## ***📊 Dataset Description***
 
 ***The dataset used in this project contains medical records of patients with the following features:***
 
@@ -43,7 +43,7 @@ The project demonstrates a complete end-to-end workflow, starting from data expl
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🔍 Exploratory Data Analysis (EDA)
+## **🔍 Exploratory Data Analysis (EDA)**
 
 Before applying machine learning algorithms, Exploratory Data Analysis (EDA) was performed to understand the dataset, detect patterns, and identify important features.
 
@@ -56,7 +56,7 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Visualization Insight:
+## **📌 Visualization Insight:**
 
 Shows the number of diabetic vs non-diabetic patients
 
@@ -75,7 +75,7 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Medical Insight:
+## ***📌 Medical Insight:***
 
 Diabetic patients generally have higher glucose levels
 
@@ -92,7 +92,7 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Insight:
+## ***📌 Insight:***
 
 Higher BMI correlates with increased diabetes risk
 
@@ -100,7 +100,7 @@ Supports medical understanding of obesity and insulin resistance
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📐 3D Visualization (Advanced Analysis)
+### ***📐 3D Visualization (Advanced Analysis)***
 
 To understand the combined effect of multiple features, 3D visualization was used.
 
@@ -124,7 +124,7 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 What this shows:
+### ***📌 What this shows:***
 
 How glucose, BMI, and age interact together
 
@@ -134,7 +134,7 @@ Improves understanding beyond 2D plots
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-⚙️ Data Preprocessing
+### ***⚙️ Data Preprocessing***
 
 Machine learning models require properly prepared data.
 
@@ -149,7 +149,7 @@ X_scaled = scaler.fit_transform(X)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Why scaling is important:
+### ***📌 Why scaling is important:***
 
 Prevents features like glucose from dominating distance calculations
 
@@ -164,9 +164,9 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Ensures fair evaluation on unseen data.
+***📌 Ensures fair evaluation on unseen data.***
 
-🤖 Machine Learning Models Implemented
+### ***🤖 Machine Learning Models Implemented***
 🔹 K-Nearest Neighbors (KNN)
 
 KNN predicts outcomes based on similarity between patients.
@@ -178,7 +178,7 @@ knn.fit(X_train, y_train)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Concept:
+## ***📌 Concept:***
 
 “Patients with similar medical attributes tend to have similar diabetes outcomes.”
 
@@ -198,7 +198,7 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Insight:
+## ***📌 Insight:***
 
 Positive coefficients increase diabetes risk
 
@@ -208,7 +208,7 @@ Provides interpretability for medical analysis
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📈 Model Evaluation
+## ***📈 Model Evaluation***
 🔹 Confusion Matrix
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
@@ -218,7 +218,7 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Helps identify:
+## ***📌 Helps identify:***
 
 True Positives
 
@@ -236,30 +236,30 @@ plt.show()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Why important:
+## ***📌 Why important:***
 
-Better than accuracy for imbalanced medical datasets
+> Better than accuracy for imbalanced medical datasets
 
-Emphasizes recall (detecting diabetic patients)
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-✅ Key Learnings & Outcomes
-
-Glucose and BMI are the most influential features
-
-Visualization plays a crucial role in medical data understanding
-
-Feature scaling is mandatory for KNN
-
-Recall is more important than accuracy in healthcare
-
-Logistic Regression provides explainability
-
-KNN serves as a strong baseline model
+> Emphasizes recall (detecting diabetic patients)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🎯 Final Conclusion
+## ***✅ Key Learnings & Outcomes***
+
+> Glucose and BMI are the most influential features
+
+> Visualization plays a crucial role in medical data understanding
+
+> Feature scaling is mandatory for KNN
+
+> Recall is more important than accuracy in healthcare
+
+> Logistic Regression provides explainability
+
+> KNN serves as a strong baseline model
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ***🎯 Conclusion***
 
 This project demonstrates a complete machine learning pipeline for diabetes prediction, integrating data exploration, 2D and 3D visualizations, preprocessing, model building, and evaluation. The use of both KNN and Logistic Regression highlights the trade-off between predictive power and interpretability. The project emphasizes responsible model evaluation in healthcare and shows how machine learning can assist in early disease detection while supporting medical decision-making.

@@ -1,8 +1,8 @@
 # DIABETES_KNN
 
 
-🩺 Diabetes Prediction & Analysis Using Machine Learning
-📌 Project Overview
+## **🩺 Diabetes Prediction & Analysis Using Machine Learning**
+*📌 Project Overview*
 
 Diabetes is a chronic medical condition that occurs when the body is unable to effectively regulate blood glucose levels due to insufficient insulin production or improper insulin utilization. Over time, unmanaged diabetes can lead to severe complications such as cardiovascular diseases, kidney failure, nerve damage, and vision loss. Early detection and diagnosis play a crucial role in preventing these long-term complications.
 
@@ -11,7 +11,7 @@ With the growth of healthcare data and advancements in machine learning, predict
 The project demonstrates a complete end-to-end workflow, starting from data exploration and visualization to model training, evaluation, and interpretation.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📊 Dataset Description
+***📊 Dataset Description***
 
 ***The dataset used in this project contains medical records of patients with the following features:***
 

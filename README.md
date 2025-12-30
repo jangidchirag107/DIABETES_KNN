@@ -10,35 +10,38 @@ With the growth of healthcare data and advancements in machine learning, predict
 
 The project demonstrates a complete end-to-end workflow, starting from data exploration and visualization to model training, evaluation, and interpretation.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📊 Dataset Description
 
-The dataset used in this project contains medical records of patients with the following features:
+***The dataset used in this project contains medical records of patients with the following features:***
 
-Pregnancies
+> Pregnancies
 
-Glucose
+> Glucose
 
-Blood Pressure
+> Blood Pressure
 
-Skin Thickness
+> Skin Thickness
 
-Insulin
+> Insulin
 
-BMI (Body Mass Index)
+> BMI (Body Mass Index)
 
-Diabetes Pedigree Function
+> Diabetes Pedigree Function
 
-Age
+> Age
 
-Outcome (Target Variable)
+> Outcome (Target Variable)
 
-Target Variable:
+***Target Variable:***
 
-0 → Non-Diabetic
+> *0 → Non-Diabetic*
 
-1 → Diabetic
+> *1 → Diabetic*
 
-This dataset is widely used for learning and benchmarking diabetes prediction models.
+****This dataset is widely used for learning and benchmarking diabetes prediction models.****
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🔍 Exploratory Data Analysis (EDA)
 
@@ -51,6 +54,7 @@ plt.xlabel("Outcome (0 = No Diabetes, 1 = Diabetes)")
 plt.ylabel("Count")
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Visualization Insight:
 
@@ -69,6 +73,7 @@ plt.title("Glucose Distribution by Outcome")
 plt.legend()
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Medical Insight:
 
@@ -85,12 +90,15 @@ plt.title("BMI Distribution by Outcome")
 plt.legend()
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Insight:
 
 Higher BMI correlates with increased diabetes risk
 
 Supports medical understanding of obesity and insulin resistance
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📐 3D Visualization (Advanced Analysis)
 
@@ -114,6 +122,7 @@ ax.set_zlabel("Age")
 ax.set_title("3D Visualization of Diabetes Data")
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 What this shows:
 
@@ -122,6 +131,8 @@ How glucose, BMI, and age interact together
 Diabetic points cluster at higher glucose & BMI
 
 Improves understanding beyond 2D plots
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ⚙️ Data Preprocessing
 
@@ -136,6 +147,7 @@ from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Why scaling is important:
 
@@ -150,6 +162,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X_scaled, y, test_size=0.2, random_state=42
 )
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Ensures fair evaluation on unseen data.
 
@@ -163,6 +176,7 @@ from sklearn.neighbors import KNeighborsClassifier
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Concept:
 
@@ -182,6 +196,7 @@ coefficients.plot(kind='barh')
 plt.title("Logistic Regression Feature Importance")
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Insight:
 
@@ -191,6 +206,8 @@ Glucose and BMI show strong positive influence
 
 Provides interpretability for medical analysis
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 📈 Model Evaluation
 🔹 Confusion Matrix
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
@@ -199,6 +216,7 @@ cm = confusion_matrix(y_test, y_pred)
 ConfusionMatrixDisplay(cm).plot()
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Helps identify:
 
@@ -216,12 +234,15 @@ plt.ylabel("Precision")
 plt.title("Precision–Recall Curve")
 plt.show()
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📌 Why important:
 
 Better than accuracy for imbalanced medical datasets
 
 Emphasizes recall (detecting diabetic patients)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ✅ Key Learnings & Outcomes
 
@@ -236,6 +257,8 @@ Recall is more important than accuracy in healthcare
 Logistic Regression provides explainability
 
 KNN serves as a strong baseline model
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🎯 Final Conclusion
 
